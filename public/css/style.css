@@ -4,3 +4,8 @@
 .navbar {
 	left: none !important;
 }
+
+.black {
+	background-color: black;
+	color: white
+}

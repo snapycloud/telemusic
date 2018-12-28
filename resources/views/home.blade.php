@@ -36,7 +36,7 @@
 
 
           <div class="row">
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-12 mx-auto">
 
               <div class="video-wrapper rounded-lg">
                 <div class="poster" style="background-image: url(../img/video/1.png)"></div>
