@@ -1,22 +1,19 @@
 @extends('layouts.app')
 
 @section('header')
-<header id="home" class="header text-white h-fullscreen text-center text-lg-left" style="background-color: #24292e">
+<header id="home" class="header text-white h-fullscreen text-center text-lg-right" style="background-image: url(../img/bg/32.jpg)">
       <canvas class="constellation" data-color="rgba(255,255,255,0.3)" width="1920" height="1001"></canvas>
       <div class="container">
         <div class="row align-items-center h-100">
 
-          <div class="col-lg-6">
-            <h1>How developers work</h1>
-            <p class="lead mt-5 mb-8">Support your workflow with lightweight tools and features. Then work how you work best—we'll follow your lead.</p>
+          <div class="col-lg-6 ml-auto">
+            <img class="mt-5" src="../img/telemusic.png" alt="img">
+            <h1>تله‌موزیک</h1>
+            <p class="lead mt-5 mb-8">اولین رسانه تصویری اختصاصی موسیقی ایران</p>
             <p class="gap-xy">
-              <a class="btn btn-round btn-outline-light mw-150" href="#">Learn more</a>
-              <a class="btn btn-round btn-light mw-150" href="#">Sign up</a>
+              <a class="btn btn-lg btn-round btn-outline-light mw-150" href="#">دربافت اپلیکیشن</a>
+              <a class="btn btn-lg btn-round btn-light mw-150" href="#">ثبت نام</a>
             </p>
-          </div>
-
-          <div class="col-lg-5 ml-auto">
-            <img class="mt-5" src="../assets/img/preview/laptop-1.png" alt="img">
           </div>
 
         </div>
@@ -41,9 +38,9 @@
             <div class="col-md-8 mx-auto">
 
               <div class="video-wrapper rounded-lg">
-                <div class="poster" style="background-image: url(../assets/img/video/1.jpg)"></div>
+                <div class="poster" style="background-image: url(../img/video/1.jpg)"></div>
                 <button class="btn btn-circle btn-lg btn-danger"><i class="fa fa-play"></i></button>
-                <video src="../assets/img/video/1.mp4" poster="../assets/img/video/1.jpg" controls=""></video>
+                <video src="../img/video/1.mp4" poster="../img/video/1.jpg" controls=""></video>
               </div>
 
             </div>
@@ -61,7 +58,7 @@
             <small>Welcome</small>
             <h2>Get a Better Understanding</h2>
             <hr>
-            <p class="lead">Holisticly implement fully tested process improvements rather than dynamic internal.</p>
+            <p class="lead">تله‌موزیک: اولین رسانه تصویری اختصاصی موسیقی ایران</p>
           </header>
 
 
@@ -69,7 +66,7 @@
           <div class="row gap-y">
 
             <div class="col-md-8 mx-auto">
-              <img src="../assets/img/preview/dribbble-9.gif" alt="..." data-aos="fade-up" data-aos-duration="2000" class="aos-init aos-animate">
+              <img src="../img/preview/dribbble-9.gif" alt="..." data-aos="fade-up" data-aos-duration="2000" class="aos-init aos-animate">
             </div>
 
 
