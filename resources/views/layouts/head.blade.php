@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" value="{{ csrf_token() }}" />
+    <title>تله موزیک | telemusic</title>
+    <meta name="description" content="اولین رسانه تصویری اختصاصی موسیقی ایران">
 
 
     <!-- Styles -->
