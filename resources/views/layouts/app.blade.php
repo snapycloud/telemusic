@@ -1,7 +1,7 @@
 
 @include('layouts.head')
 
-<body>
+<body class="body-scrolled navbar-scrolled header-scrolled">
 	<div id="start">
 @include('layouts.partial.navbar')
 

@@ -26,7 +26,7 @@
 @section('main')
 
 
-<section class="section">
+<section class="section" >
         <div class="container">
           <header class="section-header">
             <h2>تماشا کنید</h2>
@@ -52,6 +52,38 @@
 
 
 
+      <section class="section text-white overflow-hidden" style="background-image: linear-gradient(-45deg, rgb(0, 0, 0) 0%, rgba(10, 10, 10, 0.82) 100%);">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4 mr-auto mt-8 mt-md-0">
+              <img src="../img/preview/phone-5.png" alt="..." data-aos="slide-up" class="aos-init aos-animate">
+            </div>
+
+            <div class="col-md-6 text-right">
+              <h2>تله‌موزیک</h2>
+              <p class="lead">اولین رسانه تصویری اختصاصی موسیقی ایران</p>
+              <br>
+              <div class="row">
+                <form class="col-md-12 input-glass text-right" action="" method="post" target="_blank">
+                  <div class="input-group">
+                    <input type="text" name="email" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                    <span class="input-group-prepend">
+                      <button class="btn btn-glass btn-light" type="button">عضویت در تله موزیک <i class="ti-arrow-left fs-9 ml-3"></i></button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+{{-- 
 <section class="section bg-gray">
         <div class="container">
           <div class="row gap-y">
@@ -97,7 +129,10 @@
 
           </div>
         </div>
-      </section>
+      </section> --}}
+
+
+
       <section class="section">
         <div class="container">
           <header class="section-header">
@@ -178,9 +213,6 @@
           </div>
         </div>
       </section>
-
-
-
 
 
 

@@ -1,10 +1,10 @@
 
 <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content" style="border-radius: 20px">
+        <div class="modal-content" style="border-radius: 25px">
 
           <div class="modal-body black" style="border-radius: 20px">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
               <span aria-hidden="true">×</span>
             </button>
             <form method="POST" class="input-transparent">
