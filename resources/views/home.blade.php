@@ -185,7 +185,7 @@
 
 
 
-      <section class="section py-7" style="background-color: #8ea6e6">
+      <section class="section py-7" style="background-image: linear-gradient(-45deg, rgb(0, 0, 0) 0%, rgba(43, 28, 64, 0.82) 100%);">
         <div class="container">
           <div class="row gap-y align-items-center">
             <div class="col-md-3 text-center text-md-right">
