@@ -66,9 +66,9 @@
               <div class="row">
                 <form class="col-md-12 input-glass text-right" action="" method="post" target="_blank">
                   <div class="input-group">
-                    <input type="text" name="email" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                    {{-- <input type="text" name="email" class="form-control" placeholder="ایمیل خود را وارد کنید"> --}}
                     <span class="input-group-prepend">
-                      <button class="btn btn-glass btn-light" type="button">عضویت در تله موزیک <i class="ti-arrow-left fs-9 ml-3"></i></button>
+                      <button class="btn btn-glass btn-light" data-toggle="modal" data-target="#modal-register" type="button">عضویت در تله موزیک <i class="ti-arrow-left fs-9 ml-3"></i></button>
                     </span>
                   </div>
                 </form>
