@@ -132,92 +132,7 @@
       </section> --}}
 
 
-
-      <section class="section">
-        <div class="container">
-          <header class="section-header">
-            <h2>تله‌موزیک</h2>
-            <hr>
-            <p class="lead">
-              تله‌موزیک آینه جهان‌نمای دنیای موسیقی است؛ موجوعه‌ای بی‌نظیر از بهترین کنسرت‌ها، فیلم‌های مستند، موزیک ویدیوها، زندگی‌نامه چهره‌های مطرح موسیقی و تاریخ موسیقی ملل که همه آنها در یک اپلیکیشن و روی گوشی شما قابل دسترس است. در حال حاضر نسخه اندروید این اپلیکیشن به صورت آزمایشی منتشر شده است و به زودی نسخه آی‌اواس اپلیکیشن تله‌موزیک هم عرضه خواهد شد
-            </p>
-          </header>
-
-
-
-          <div class="row gap-y">
-
-            <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
-                <p><i class="icon-mobile lead-6 text-muted"></i></p>
-                <h5 class="card-title text-dark mb-0">پورتال مشتریان</h5>
-              </a>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
-                <p><i class="icon-gears lead-6 text-muted"></i></p>
-                <h5 class="card-title text-dark mb-0">سفارشی سازی آسان</h5>
-              </a>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
-                <p><i class="icon-tools lead-6 text-muted"></i></p>
-                <h5 class="card-title text-dark mb-0">سفارشی سازی آسان</h5>
-              </a>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
-                <p><i class="icon-recycle lead-6 text-muted"></i></p>
-                <h5 class="card-title text-dark mb-0">ساده برای استفاده</h5>
-              </a>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
-                <p><i class="icon-browser lead-6 text-muted"></i></p>
-                <h5 class="card-title text-dark mb-0">پشتیبانی فنی</h5>
-              </a>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
-                <p><i class="icon-paintbrush lead-6 text-muted"></i></p>
-                <h5 class="card-title text-dark mb-0">پشتیبانی فنی</h5>
-              </a>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
-                <p><i class="icon-puzzle lead-6 text-muted"></i></p>
-                <h5 class="card-title text-dark mb-0">پشتیبانی فنی</h5>
-              </a>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
-                <p><i class="icon-newspaper lead-6 text-muted"></i></p>
-                <h5 class="card-title text-dark mb-0">پشتیبانی فنی</h5>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-
-
-
-      <section class="section py-7" style="background-image: linear-gradient(-45deg, rgb(0, 0, 0) 0%, rgba(43, 28, 64, 0.82) 100%);">
+{{--       <section class="section py-7" style="background-image: linear-gradient(-45deg, rgb(0, 0, 0) 0%, rgba(43, 28, 64, 0.82) 100%);">
         <div class="container">
           <div class="row gap-y align-items-center">
             <div class="col-md-3 text-center text-md-right">
@@ -228,7 +143,166 @@
             </div>
           </div>
         </div>
+      </section> --}}
+
+
+      <section id="boxed" class="section">
+        <div class="container" id="member">
+          <header class="section-header">
+            <h2>سروریس‌های اشتراکی</h2>
+            <hr>
+          </header>
+
+          <div class="row">
+
+
+            <div class="col-md-4 mx-auto">
+              <div class="pricing-3 popular">
+                <h6 class="plan-name">شخصی</h6>
+                <h2 class="">رایگان</h2>
+                <ul>
+                  <li>محتوای موزیک</li>
+                  <li>HLS</li>
+                  <li>سرویس api</li>
+                </ul>
+                <br>
+                <a class="btn btn-round btn-primary w-200" href="#" data-toggle="modal" data-target="#modal-register">عضویت</a>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 mx-auto">
+              <div class="pricing-3 popular">
+                <h6 class="plan-name">شرکتی</h6>
+                <h2 class="">۱۹۹ هزار تومان</h2>
+                <ul>
+                  <li>محتوای موزیک</li>
+                  <li>HLS</li>
+                  <li>سرویس API</li>
+                </ul>
+                <br>
+                <a class="btn btn-round btn-primary w-200" href="#" data-toggle="modal" data-target="#modal-register">عضویت</a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
       </section>
+
+
+
+    <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>با تله‌موزیک بهتر ببینید</h2>
+            <hr>
+            <p class="lead">تله‌موزیک آینه جهان‌نمای دنیای موسیقی است؛ موجوعه‌ای بی‌نظیر از بهترین کنسرت‌ها، فیلم‌های مستند، موزیک ویدیوها، زندگی‌نامه چهره‌های مطرح موسیقی و تاریخ موسیقی ملل که همه آنها در یک اپلیکیشن و روی گوشی شما قابل دسترس است. در حال حاضر نسخه اندروید این اپلیکیشن به صورت آزمایشی منتشر شده است و به زودی نسخه آی‌اواس اپلیکیشن تله‌موزیک هم عرضه خواهد شد</p>
+          </header>
+
+
+          <div class="row gap-y">
+
+            <div class="col-6 col-md-4 col-xl-2">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+                <p style="color: #78a300"><i class="icon-lightbulb lead-7"></i></p>
+                <h6 class="mb-0"><strong>Support</strong></h6>
+              </a>
+            </div>
+
+
+            <div class="col-6 col-md-4 col-xl-2">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+                <p style="color: #eb4a62"><i class="icon-book-open lead-7"></i></p>
+                <h6 class="mb-0"><strong>Guide</strong></h6>
+              </a>
+            </div>
+
+
+            <div class="col-6 col-md-4 col-xl-2">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+                <p style="color: #f69a3e"><i class="icon-chat lead-7"></i></p>
+                <h6 class="mb-0"><strong>Chat</strong></h6>
+              </a>
+            </div>
+
+
+            <div class="col-6 col-md-4 col-xl-2">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+                <p style="color: #f0c93e"><i class="icon-mic lead-7"></i></p>
+                <h6 class="mb-0"><strong>Talk</strong></h6>
+              </a>
+            </div>
+
+
+            <div class="col-6 col-md-4 col-xl-2">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+                <p style="color: #37b8af"><i class="icon-envelope lead-7"></i></p>
+                <h6 class="mb-0"><strong>Message</strong></h6>
+              </a>
+            </div>
+
+
+            <div class="col-6 col-md-4 col-xl-2">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+                <p style="color: #2faabc"><i class="icon-piechart lead-7"></i></p>
+                <h6 class="mb-0"><strong>Explore</strong></h6>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+<section class="section py-9" id="about" style="background-image: url(../img/thumb/23.png)">
+        <div class="overlay opacity-90" style="background-image: linear-gradient(90deg, #3131319e 0%, #101010 100%);"></div>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-10 col-md-7 col-xl-5 text-right" >
+              <div class="section-dialog shadow-4">
+                <h5 class="fw-500">درباره تله‌موزیک</h5>
+                <blockquote class="blockquote text-left lead-1 mb-0 mt-5">
+                  <p>تله‌موزیک آینه جهان‌نمای دنیای موسیقی است؛ موجوعه‌ای بی‌نظیر از بهترین کنسرت‌ها، فیلم‌های مستند، موزیک ویدیوها، زندگی‌نامه چهره‌های مطرح موسیقی و تاریخ موسیقی ملل که همه آنها در یک اپلیکیشن و روی گوشی شما قابل دسترس است. در حال حاضر نسخه اندروید این اپلیکیشن به صورت آزمایشی منتشر شده است و به زودی نسخه آی‌اواس اپلیکیشن تله‌موزیک هم عرضه خواهد شد</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+<section class="section" id="contact">
+        <div class="container">
+          <div class="row gap-y align-items-center ">
+
+            <div class="col-md-5">
+              <img src="../img/thumb/24.png" alt="...">
+            </div>
+
+            <div class="col-md-7 mr-auto text-right">
+              <h4>ارتباط با ما</h4>
+              <p>آدرس: تهران، خیابان گیشا، کوچه ۳۷ا، پلاک ۶۷</p>
+              <p>شماره شرکت: ۸۸۲۷۵۷۹۱</p>
+              <p>ایمیل: mehrtahacom@gmail.com</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
 
 
 
