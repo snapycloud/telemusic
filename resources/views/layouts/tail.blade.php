@@ -45,9 +45,11 @@
 
             <div class="col-md-6">
               <div class="nav nav-bold nav-uppercase justify-content-center justify-content-md-end">
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Blog</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="https://backend.telemusic.ir">ورود به پنل</a>
+                <a class="nav-link" href="#contact">تماس با ما</a>
+                <a class="nav-link" href="#about">درباره ما</a>
+                <a class="nav-link" href="#member">تولید محتوا</a>
+                <a class="nav-link" href="#home">صفحه اصلی</a>
               </div>
             </div>
 
@@ -63,7 +65,7 @@
 
             <div class="col-12 text-center">
               <br>
-              <small>© TheThemeio 2018, All rights reserved.</small>
+              <small>© Telemusic 2018, All rights reserved.</small>
             </div>
 
           </div>
