@@ -264,10 +264,10 @@
         <div class="container">
 
           <div class="row">
-            <div class="col-10 col-md-7 col-xl-5 text-right" >
+            <div class="col-12 col-md-7 col-xl-5 text-right" >
               <div class="section-dialog shadow-4">
                 <h5 class="fw-500">درباره تله‌موزیک</h5>
-                <blockquote class="blockquote text-left lead-1 mb-0 mt-5">
+                <blockquote class="blockquote text-right lead-1 mb-0 mt-5">
                   <p>تله‌موزیک آینه جهان‌نمای دنیای موسیقی است؛ موجوعه‌ای بی‌نظیر از بهترین کنسرت‌ها، فیلم‌های مستند، موزیک ویدیوها، زندگی‌نامه چهره‌های مطرح موسیقی و تاریخ موسیقی ملل که همه آنها در یک اپلیکیشن و روی گوشی شما قابل دسترس است. در حال حاضر نسخه اندروید این اپلیکیشن به صورت آزمایشی منتشر شده است و به زودی نسخه آی‌اواس اپلیکیشن تله‌موزیک هم عرضه خواهد شد</p>
                 </blockquote>
               </div>
