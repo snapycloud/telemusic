@@ -8,7 +8,7 @@
         <div class="row align-items-center h-100">
 
           <div class="col-lg-6 ml-auto">
-            <img class="mt-5" src="../img/telemusic.png" alt="img">
+            <img class="mt-5" src="{{ asset('img/telemusic.png') }}" alt="img">
             <h1>تله‌موزیک</h1>
             <p class="lead mt-5 mb-8">اولین رسانه تصویری اختصاصی موسیقی ایران</p>
             <p class="gap-xy">
@@ -39,9 +39,9 @@
             <div class="col-md-12 mx-auto">
 
               <div class="video-wrapper rounded-lg">
-                <div class="poster" style="background-image: url(../img/video/1.png)"></div>
+                <div class="poster" style="background-image: url({{ asset('img/video/1.png') }})"></div>
                 <button class="btn btn-circle btn-lg btn-danger"><i class="fa fa-play"></i></button>
-                <video src="https://stream.telemusic.ir/5c192a5a99d396500/backup.mp4" poster="../img/video/1.png" controls=""></video>
+                <video src="https://stream.telemusic.ir/5c192a5a99d396500/backup.mp4" poster="{{ asset('img/video/1.png') }}" controls=""></video>
               </div>
 
             </div>
@@ -56,7 +56,7 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-4 mr-auto mt-8 mt-md-0">
-              <img src="../img/preview/phone-5.png" alt="..." data-aos="slide-up" class="aos-init aos-animate">
+              <img src="{{ asset('img/preview/phone-5.png') }}" alt="..." data-aos="slide-up" class="aos-init aos-animate">
             </div>
 
             <div class="col-md-6 text-right">
@@ -259,7 +259,7 @@
 
 
 
-<section class="section py-9" id="about" style="background-image: url(../img/thumb/23.png)">
+<section class="section py-9" id="about" style="background-image: url({{ asset('img/thumb/23.png') }})">
         <div class="overlay opacity-90" style="background-image: linear-gradient(90deg, #3131319e 0%, #101010 100%);"></div>
         <div class="container">
 
@@ -282,7 +282,7 @@
           <div class="row gap-y align-items-center ">
 
             <div class="col-md-5">
-              <img src="../img/thumb/24.png" alt="...">
+              <img src="{{ asset('img/thumb/24.png') }}" alt="...">
             </div>
 
             <div class="col-md-7 mr-auto text-right">
