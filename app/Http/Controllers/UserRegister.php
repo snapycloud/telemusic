@@ -24,6 +24,8 @@ class UserRegister extends Controller
     	
     	$this->register($userName, $lastName, $phoneNumber);
 
-    	return view('success');
+    	return view('home', [
+            'status' => true
+        ]);
     }
 }

@@ -1,3 +1,27 @@
+<div class="modal modal-top fade" id="modal-top" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                  <p class="lead text-right">ثبت نام شما با موفقیت انجام شد.</p>
+                  <p class="lead mb-0 text-right">بعد از بررسی ایمیل حاوی اطلاعت ورود به سیستم برایتان ارسال خواهد شد.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">خروج</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
 
 <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -42,6 +66,15 @@
 <footer class="footer text-white bg-dark py-7">
         <div class="container">
           <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-left mt-5 mt-md-0">
+              <div class="social social-bg-dark">
+                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
+                <a class="social-youtube" href="#"><i class="fa fa-youtube"></i></a>
+                <a class="social-dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+              </div>
+            </div>
 
             <div class="col-md-6">
               <div class="nav nav-bold nav-uppercase justify-content-center justify-content-md-end">
@@ -50,16 +83,6 @@
                 <a class="nav-link" href="#about">درباره ما</a>
                 <a class="nav-link" href="#member">تولید محتوا</a>
                 <a class="nav-link" href="#home">صفحه اصلی</a>
-              </div>
-            </div>
-
-            <div class="col-md-6 text-center text-md-left mt-5 mt-md-0">
-              <div class="social social-bg-dark">
-                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
-                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
-                <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
-                <a class="social-youtube" href="#"><i class="fa fa-youtube"></i></a>
-                <a class="social-dribbble" href="#"><i class="fa fa-dribbble"></i></a>
               </div>
             </div>
 
@@ -83,6 +106,12 @@
     @if($errors->any())
       <script type="text/javascript">
           $('#modal-register').modal()
+      </script>
+    @endif
+
+    @if($status)
+      <script>
+        $('#modal-top').modal();
       </script>
     @endif
  

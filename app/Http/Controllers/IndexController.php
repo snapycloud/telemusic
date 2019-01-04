@@ -8,6 +8,9 @@ class IndexController extends Controller
 {
     public function getHome()
     {
-    	return view('home');
+    	
+    	return view('home', [
+    		'status' => false
+    	]);
     }
 }
