@@ -36,4 +36,35 @@ trait Entity
 
 		return $result['total'];
 	}
+
+	public function getNewEvent()
+	{
+		return	$this->request('GET', 'LiveEvent', [
+                    "select" => "",
+                    "where[0][type]" => "in",
+                    "where[0][attribute]" => "status",
+                    "where[0][value][]" => 'Published'
+                ]);
+
+	}
+
+	public function clientExists($phoneNumber)
+	{
+		return  $this->request('GET', 'Client', [
+                    "select" => "",
+                    "where[0][type]" => "startsWith",
+                    "where[0][attribute]" => "phoneNumber",
+                    "where[0][value]" => $phoneNumber
+                ]);
+
+	}
+
+	public function createClient($phoneNumber)
+	{
+		return $this->request('POST', 'Client', [
+			'phoneNumber' => $phoneNumber,
+			'assignedUserId' => '5bed39e222f776a2c',
+			'assignedUserName' => 'api'
+		]);
+	}
 }

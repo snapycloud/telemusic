@@ -14,6 +14,10 @@
             <p class="gap-xy">
               <a class="btn btn-lg btn-round btn-outline-light mw-150" href="#">دربافت اپلیکیشن</a>
               <a class="btn btn-lg btn-round btn-light mw-150" href="#" data-toggle="modal" data-target="#modal-register">ثبت نام</a>
+              @if($event)
+                <a id="promot"  class="btn btn-lg btn-round btn-light mw-150" href="#" data-toggle="popup" data-target="#popup-promotion-3
+">مشاهده رویداد جدید</a>
+              @endif
             </p>
           </div>
 

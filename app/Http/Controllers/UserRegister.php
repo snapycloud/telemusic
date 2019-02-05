@@ -19,7 +19,7 @@ class UserRegister extends Controller
     	$phoneNumber = $request->get('phoneNumber');
 
     	if($this->userExists($userName)) {
-    		return back()->withInput()->withErrors(['msg', 'The Message']);;
+    		return back()->withInput()->withErrors(['msg', 'The Message']);
     	}
     	
     	$this->register($userName, $lastName, $phoneNumber);
@@ -27,5 +27,39 @@ class UserRegister extends Controller
     	return view('home', [
             'status' => true
         ]);
-    }
+	}
+	
+
+	public function postOtp(Request $request)
+	{
+		$request->validate([
+            'phoneNumber' => 'required'
+		]);
+
+		
+
+        $phoneNumber = $request->get('phoneNumber');
+		
+		$client = $this->clientExists($phoneNumber);
+
+		
+        if (!$client['total']) {
+ 	        $client = $this->createClient($phoneNumber);
+        }
+		
+		$event = $this->getNewEvent();
+
+        if ($event['total']) {
+            $event = $event['list'][0];
+        } else {
+            $event = false;
+		}
+		
+		return view('live', [
+			'status' => false,'video' => $event, 'event' => false
+			]);
+
+		
+	}
+
 }

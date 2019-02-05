@@ -101,7 +101,11 @@
     <button class="btn btn-circle btn-primary scroll-top"><i class="fa fa-angle-up"></i></button>
     <!-- Scripts -->
     <script src="{{ asset('js/min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>      
+    <script src="{{ asset('js/script.js') }}"></script>    
+
+    @if($event) 
+      @include('partials.popup.popup-promotion-3')
+    @endif
 
     @if($errors->any())
       <script type="text/javascript">
