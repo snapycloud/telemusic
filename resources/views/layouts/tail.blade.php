@@ -87,7 +87,9 @@
             </div>
 
             <div class="col-12 text-center">
+<img id = 'jxlzrgvjnbqeesgtjzpewlao' style = 'cursor:pointer' onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=132074&p=rfthxlaouiwkobpdjyoeaods", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = 'logo-samandehi' src = 'https://logo.samandehi.ir/logo.aspx?id=132074&p=nbpdqftiodrflymayndtshwl' />
               <br>
+<hr>
               <small>© Telemusic 2018, All rights reserved.</small>
             </div>
 
@@ -101,7 +103,7 @@
     <button class="btn btn-circle btn-primary scroll-top"><i class="fa fa-angle-up"></i></button>
     <!-- Scripts -->
     <script src="{{ asset('js/min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>      
+    <script src="{{ asset('js/script.js') }}"></script>
 
     @if($errors->any())
       <script type="text/javascript">
@@ -114,6 +116,6 @@
         $('#modal-top').modal();
       </script>
     @endif
- 
+
   </body>
 </html>

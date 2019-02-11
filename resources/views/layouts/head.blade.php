@@ -7,6 +7,7 @@
     <title>تله موزیک | telemusic</title>
     <meta name="description" content="اولین رسانه تصویری اختصاصی موسیقی ایران">
 
+    <meta name="enamad" content="865780">
 
     <!-- Styles -->
     <link href="{{ asset('css/min.css') }}" rel="stylesheet">
