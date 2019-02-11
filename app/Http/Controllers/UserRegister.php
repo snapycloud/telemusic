@@ -37,9 +37,9 @@ class UserRegister extends Controller
 
         $phoneNumber = $request->get('phoneNumber');
 
-        // $this->sendOtp($phoneNumber);
-        // dd($phoneNumber);
-        return view('home', 
+        $this->sendOtp($phoneNumber);
+        
+        return view('event', 
             ['status' => false,'video' => false, 'event' => false, 'otp' => $phoneNumber, 'otp_error' => false]
         );
     }
@@ -59,7 +59,7 @@ class UserRegister extends Controller
         
 
         if(!$result){
-            return view('home', 
+            return view('event', 
                 ['status' => false,'video' => false, 'event' => false, 'otp' => $phoneNumber, 'otp_error' => true]
             );
         }

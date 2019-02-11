@@ -105,9 +105,7 @@
 
     @if($event) 
       @include('partials.popup.popup-promotion-3')
-    @endif
-
-    <?php dump($errors->any()) ?>
+    @endif    
 
     @if($otp) 
       @include('partials.popup.popup-otp')
