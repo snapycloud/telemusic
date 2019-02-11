@@ -28,20 +28,44 @@ class UserRegister extends Controller
             'status' => true
         ]);
 	}
+
+    public function sendClientOtp(Request $request)
+    {
+        $request->validate([
+            'phoneNumber' => 'required'
+        ]);
+
+        $phoneNumber = $request->get('phoneNumber');
+
+        // $this->sendOtp($phoneNumber);
+        // dd($phoneNumber);
+        return view('home', 
+            ['status' => false,'video' => false, 'event' => false, 'otp' => $phoneNumber, 'otp_error' => false]
+        );
+    }
+
 	
 
 	public function postOtp(Request $request)
 	{
 		$request->validate([
-            'phoneNumber' => 'required'
+            'phoneNumber' => 'required',
+            'code' => 'required'
 		]);
 
-		
-
         $phoneNumber = $request->get('phoneNumber');
+        $code = $request->get('code');
+        $result = $this->checkOtp($phoneNumber, $code);
+        
+
+        if(!$result){
+            return view('home', 
+                ['status' => false,'video' => false, 'event' => false, 'otp' => $phoneNumber, 'otp_error' => true]
+            );
+        }
 		
 		$client = $this->clientExists($phoneNumber);
-
+        dd($client);
 		
         if (!$client['total']) {
  	        $client = $this->createClient($phoneNumber);
@@ -54,12 +78,13 @@ class UserRegister extends Controller
         } else {
             $event = false;
 		}
-		
-		return view('live', [
-			'status' => false,'video' => $event, 'event' => false
-			]);
 
+        return redirect()->route('home')->with(
+            ['status' => false,'video' => $event, 'event' => false]
+        );
 		
 	}
+
+
 
 }

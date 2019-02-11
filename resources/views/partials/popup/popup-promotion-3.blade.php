@@ -7,7 +7,7 @@
         <h3 class="fw-200">{{ $event['name'] }}</h3>
         <p class="lead-1">{{ $event['description'] }}</p>
         <br>
-        <p class="mb-2"><a class="btn btn-lg btn-round btn-success px-7" href="#">مشاهده لایو از طریق وب</a></p>
+        <a class="btn btn-lg btn-round btn-success px-7" href="#" data-toggle="modal" data-target="#register">مشاهده لایو از طریق وب</a>
         <p class="small mb-0"><a href="#" data-dismiss="popup">دانلود ios</a></p>
         <p class="small mb-0"><a href="#" data-dismiss="popup">دانلود android</a></p>
       </div>
@@ -22,7 +22,10 @@
         <h3 class="fw-200">{{ $event['name'] }}</h3>
         <p class="lead-1">{{ $event['description'] }}</p>
         <br>
-        <p class="mb-2"><a class="btn btn-lg btn-round btn-success px-7" href="#" data-toggle="modal" data-target="#register">مشاهده لایو از طریق وب</a></p>
+
+        <p class="mb-2">
+          <a class="btn btn-lg btn-round btn-success px-7" href="#" data-toggle="modal" data-target="#register">مشاهده لایو از طریق وب</a>
+        </p>
         <p class="small mb-0"><a href="#" data-dismiss="popup">دانلود ios</a></p>
         <p class="small mb-0"><a href="#" data-dismiss="popup">دانلود android</a></p>
       </div>
@@ -45,7 +48,7 @@
                 <div class="alert alert-danger text-right" role="alert">اطلاعات وارد شده اشتباه است</div>
             @endif
 
-            <form method="POST" action="{{ route('otp') }}">
+            <form method="POST" action="{{ route('otp.send') }}">
               {{ csrf_field() }}
               <hr class="w-10">
               <div class="form-group">
@@ -66,5 +69,4 @@
 
 <script>
    $('#promot').click();
-
 </script>

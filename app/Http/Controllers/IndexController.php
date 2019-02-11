@@ -22,7 +22,9 @@ class IndexController extends Controller
     	
     	return view('home', [
             'status' => false,
-            'event' => $event
+            'event' => $event,
+            'otp' => false,
+            'video' => false
     	]);
     }
 }

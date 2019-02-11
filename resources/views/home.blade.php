@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('header')
-<header id="home" class="header text-white h-fullscreen text-center text-lg-right" style="background-image: url(../img/bg/32.jpg)">
+<header id="home" class="header text-white h-fullscreen text-center text-lg-right" style="background-image: url({{ asset('/img/bg/32.jpg') }})">
   <div class="overlay opacity-80" style="background-image: linear-gradient(-45deg, rgba(25, 25, 25, 0.85) 0%, rgba(43, 28, 64, 0.66) 100%);"></div>
       <canvas class="constellation" data-color="rgba(255,255,255,0.7)" width="1920" height="1001"></canvas>
       <div class="container">
@@ -14,10 +14,10 @@
             <p class="gap-xy">
               <a class="btn btn-lg btn-round btn-outline-light mw-150" href="#">دربافت اپلیکیشن</a>
               <a class="btn btn-lg btn-round btn-light mw-150" href="#" data-toggle="modal" data-target="#modal-register">ثبت نام</a>
-              @if($event)
+              {{-- @if($event)
                 <a id="promot"  class="btn btn-lg btn-round btn-light mw-150" href="#" data-toggle="popup" data-target="#popup-promotion-3
 ">مشاهده رویداد جدید</a>
-              @endif
+              @endif --}}
             </p>
           </div>
 
@@ -28,6 +28,25 @@
 @stop
 
 @section('main')
+@if($video)
+<section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>{{ $event['name'] }}</h2>
+            <hr>
+            <p class="lead">{{ $event['description'] }}</p>
+          </header>
+
+
+          <div class="text-center">
+            <a class="btn btn-primary btn-lg" href="{{ $event['embeddedLink'] }}" data-provide="lightbox"> <i class="fa fa-play"></i> مشاهد زنده</a>
+          </div>
+
+        </div>
+      </section>
+@endif
+
+
 
 
 <section class="section" >

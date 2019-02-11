@@ -107,6 +107,12 @@
       @include('partials.popup.popup-promotion-3')
     @endif
 
+    <?php dump($errors->any()) ?>
+
+    @if($otp) 
+      @include('partials.popup.popup-otp')
+    @endif
+
     @if($errors->any())
       <script type="text/javascript">
           $('#modal-register').modal()

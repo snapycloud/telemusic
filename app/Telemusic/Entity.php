@@ -67,4 +67,37 @@ trait Entity
 			'assignedUserName' => 'api'
 		]);
 	}
+
+	public function sendOtp($phoneNumber)
+	{
+		try{
+			$code = rand(1000, 9999);
+			$api = new \Kavenegar\KavenegarApi( "50474576534E447253534F383577506E764233374B47706448552B334C5A7235" );
+			$result = $api->VerifyLookup($phoneNumber,$code, '', '', 'telmusic', 'sms');
+
+			$key_id = 'telemusic.ir.OPT.' . $phoneNumber;
+			cache()->put($key_id, $code, 20);
+		}
+		catch(\Kavenegar\Exceptions\ApiException $e){
+			echo $e->errorMessage();
+		}
+		catch(\Kavenegar\Exceptions\HttpException $e){
+			echo $e->errorMessage();
+		}
+	}
+
+	public function checkOtp($phoneNumber, $code)
+	{
+		$key_id = 'telemusic.ir.OPT.' . $phoneNumber;
+		$stack_code = cache()->get($key_id);
+
+		dd($stack_code, $code);
+
+		if($stack_code == $code) {
+			return true;
+		}
+
+		return false;
+	}
+
 }
