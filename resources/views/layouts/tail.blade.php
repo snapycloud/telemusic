@@ -105,6 +105,14 @@
     <script src="{{ asset('js/min.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
 
+    @if($event)
+      @include('partials.popup.popup-promotion-3')
+    @endif
+
+    @if($otp)
+      @include('partials.popup.popup-otp')
+    @endif
+
     @if($errors->any())
       <script type="text/javascript">
           $('#modal-register').modal()

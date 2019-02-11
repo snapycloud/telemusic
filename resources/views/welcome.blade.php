@@ -2,7 +2,7 @@
 
 @section('header')
 
-<header class="header text-white h-fullscreen bg-fixed" style="background-image: url('../img/bg/19.jpg')" data-overlay="2">
+<header class="header text-white h-fullscreen bg-fixed" style="background-image: url('{{ asset("/img/bg/19.jpg") }}')" data-overlay="2">
 
       <div class="overlay opacity-80" style="background-image: linear-gradient(-45deg, rgba(63, 81, 181, 0.85) 0%, #673AB7 100%);"></div>
       <canvas class="constellation" data-radius="0"></canvas>
