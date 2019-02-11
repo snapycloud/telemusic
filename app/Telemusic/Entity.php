@@ -91,9 +91,7 @@ trait Entity
 		$key_id = 'telemusic.ir.OPT.' . $phoneNumber;
 		$stack_code = cache()->get($key_id);
 
-		dd($stack_code, $code);
-
-		if($stack_code == $code) {
+		if((integer) $stack_code == (integer) $code) {
 			return true;
 		}
 
