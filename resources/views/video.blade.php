@@ -32,46 +32,20 @@
 <section class="section">
         <div class="container">
           <header class="section-header">
-            <h2>{{ $event['name'] }}</h2>
+            <h2>{{ $video['name'] }}</h2>
             <hr>
-            <p class="lead">{{ $event['description'] }}</p>
+            <p class="lead">{{ $video['description'] }}</p>
           </header>
 
 
           <div class="text-center">
-            <a class="btn btn-primary btn-lg" href="{{ $event['embeddedLink'] }}" data-provide="lightbox"> <i class="fa fa-play"></i> مشاهد زنده</a>
+            <a class="btn btn-primary btn-lg" href="{{ $video['embeddedLink'] }}" data-provide="lightbox"> <i class="fa fa-play"></i> مشاهد زنده</a>
           </div>
 
         </div>
       </section>
 @endif
 
-
-
-
-<section class="section" >
-        <div class="container">
-          <header class="section-header">
-            <h2>تماشا کنید</h2>
-            <hr>
-            <p class="lead">آنچه در تله موزیک خواهید دید</p>
-          </header>
-
-
-          <div class="row">
-            <div class="col-md-12 mx-auto">
-
-              <div class="video-wrapper rounded-lg">
-                <div class="poster" style="background-image: url({{ asset('img/video/1.png') }})"></div>
-                <button class="btn btn-circle btn-lg btn-danger"><i class="fa fa-play"></i></button>
-                <video src="https://stream.telemusic.ir/5c192a5a99d396500/backup.mp4" poster="{{ asset('img/video/1.png') }}" controls=""></video>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
 
 
 
@@ -168,52 +142,6 @@
         </div>
       </section> --}}
 
-
-      <section id="boxed" class="section">
-        <div class="container" id="member">
-          <header class="section-header">
-            <h2>سروریس‌های اشتراکی</h2>
-            <hr>
-          </header>
-
-          <div class="row">
-
-
-            <div class="col-md-4 mx-auto">
-              <div class="pricing-3 popular">
-                <h6 class="plan-name">شخصی</h6>
-                <h2 class="">رایگان</h2>
-                <ul>
-                  <li>محتوای موزیک</li>
-                  <li>HLS</li>
-                  <li>سرویس api</li>
-                </ul>
-                <br>
-                <a class="btn btn-round btn-primary w-200" href="#" data-toggle="modal" data-target="#modal-register">عضویت</a>
-              </div>
-            </div>
-
-
-            <div class="col-md-4 mx-auto">
-              <div class="pricing-3 popular">
-                <h6 class="plan-name">شرکتی</h6>
-                <h2 class="">۱۹۹ هزار تومان</h2>
-                <ul>
-                  <li>محتوای موزیک</li>
-                  <li>HLS</li>
-                  <li>سرویس API</li>
-                </ul>
-                <br>
-                <a class="btn btn-round btn-primary w-200" href="#" data-toggle="modal" data-target="#modal-register">عضویت</a>
-              </div>
-            </div>
-
-
-          </div>
-
-
-        </div>
-      </section>
 
 
 
