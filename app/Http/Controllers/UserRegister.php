@@ -65,7 +65,7 @@ class UserRegister extends Controller
         }
 		
 		$client = $this->clientExists($phoneNumber);
-        dd($client);
+        
 		
         if (!$client['total']) {
  	        $client = $this->createClient($phoneNumber);
@@ -79,10 +79,9 @@ class UserRegister extends Controller
             $event = false;
 		}
 
-        return redirect()->route('home')->with(
+        return view('video', 
             ['status' => false,'video' => $event, 'event' => false]
         );
-		
 	}
 
 
