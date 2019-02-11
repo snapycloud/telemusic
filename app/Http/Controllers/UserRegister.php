@@ -80,7 +80,7 @@ class UserRegister extends Controller
 		}
 
         return view('video', 
-            ['status' => false,'video' => $event, 'event' => false]
+            ['status' => false,'video' => $event, 'event' => false, 'otp' => false, 'otp_error' => false]
         );
 	}
 
