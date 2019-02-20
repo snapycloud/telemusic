@@ -11,4 +11,9 @@ use App\Telemusic\Api as TelemusicApi;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests,  TelemusicApi;
+
+    public function getLanding()
+    {
+    	return view('landing');
+    }
 }
