@@ -768,33 +768,33 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 wow animated fadeInLeft align-center" data-wow-duration="1s" data-wow-delay="0.3s">
-						<h1 class="arrow">Contact</h1><hr>
+						<h1 class="arrow">تماس با تله موزیک</h1><hr>
 						<p>Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut his, prompta feugiat usu minimum delicata.</p>
 					</div>
 				</div>
 				<div class="row contact-details">
 					<div class="col-md-4 wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
 						<div class="light-box box-hover">
-							<h2><span>Address</span></h2>
-							<p>Level 5,<br> 245 Quigley Bvld,<br>Azuire</p>
+							<h2><span>پست الکترونیک</span></h2>
+							<p><a href="mailto:mehrtahacom@gmail.com" target="_top">mehrtahacom@gmail.com</a><br></p>
 						</div>
 					</div>
 					<div class="col-md-4 wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.7s">
 						<div class="light-box box-hover">
-							<h2><span>Phone</span></h2>
-							<p>+61 9 211 3747<br>+61 3 075 8371</p>
+							<h2><span>شماره تماس‌ها</span></h2>
+							<p>۰۲۱-۸۸۲۷۵۷۹۱<br>۰۲۱-۸۸۲۶۶۳۶۴</p>
 						</div>
 					</div>
 					<div class="col-md-4 wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
 						<div class="light-box box-hover">
-							<h2><span>Email</span></h2>
-							<p><a href="#">mievent@reach.fr</a><br><a href="#">support@reach.com</a><br><a href="#">contact@mievent.com</a></p>
+							
+
+							<h2><span>آدرس</span></h2>
+							<p>تهران، خیابان گیشا<br> کوچه ۳۷ا، پلاک ۶۷</p>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<a id="get_directions" class="learn-more-btn btn-effect" href="#"><i class="fa fa-map-marker"></i><span>Get Directions</span></a>
-				</div>
+
 				<div class="row">
 					<div class="col-md-12">
 						<ul class="social-buttons">
