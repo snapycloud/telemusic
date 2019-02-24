@@ -77,6 +77,7 @@ trait Entity
 
 			$key_id = 'telemusic.ir.OPT.' . $phoneNumber;
 			cache()->put($key_id, $code, 20);
+			return $code;
 		}
 		catch(\Kavenegar\Exceptions\ApiException $e){
 			echo $e->errorMessage();

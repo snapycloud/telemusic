@@ -33,7 +33,7 @@
 }
 
 
-a, h1, h2, h3, h4, h5, p, .landing-text-pos p, span{
+a, h1, h2, h3, h4, h5, p, .landing-text-pos p, span, strong, li, input, button, form{
 	font-family: "Iran Yekan" !important;
 	letter-spacing: 0px !important;
     direction: rtl !important;
@@ -60,6 +60,35 @@ ul.nav li a {
     float: right !important;
 }
 
+.md-trigger {
+    font-family: "Iran Yekan" !important;
+}
+
+.sp-dsc p {
+    color: black;
+    text-align: right;e
+}
+
+li {
+    text-align: right;
+}
+
+.nl-submit {
+    font-family: "Iran Yekan" !important;
+    letter-spacing: 0px !important;
+    direction: rtl !important;
+}
+
+.subscribe button {
+    width:auto !important;
+}
+
+.has-error {
+    color: red;
+}
+.alert-danger p {
+    color: red;
+}
 
 
 

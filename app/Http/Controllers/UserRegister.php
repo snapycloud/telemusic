@@ -32,16 +32,40 @@ class UserRegister extends Controller
     public function sendClientOtp(Request $request)
     {
         $request->validate([
-            'phoneNumber' => 'required'
+            'phoneNumber' => 'required|regex:/(09)[0-9]{9}/'
         ]);
 
         $phoneNumber = $request->get('phoneNumber');
 
-        $this->sendOtp($phoneNumber);
+
+        return $this->sendOtp($phoneNumber);
+    }
+
+    public function getEvent(Request $request)
+    {
+        $request->validate([
+            'phoneNumber' => 'required|regex:/(09)[0-9]{9}/'
+        ]);
+
+        $phoneNumber = $request->get('phoneNumber');
+
+
+        $client = $this->clientExists($phoneNumber);
         
-        return view('event', 
-            ['status' => false,'video' => false, 'event' => false, 'otp' => $phoneNumber, 'otp_error' => false]
-        );
+        
+        if (!$client['total']) {
+            $client = $this->createClient($phoneNumber);
+        }
+        
+        $event = $this->getNewEvent();
+
+        if ($event['total']) {
+            $event = $event['list'][0];
+        } else {
+            $event = false;
+        }
+
+        return $event;
     }
 
 	

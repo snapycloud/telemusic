@@ -1786,20 +1786,99 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('mounted');
   },
   data: function data() {
     return {
-      status: false,
-      otp: false,
-      validate: false
+      phone: '',
+      otp: '',
+      code: false,
+      verifcation: false,
+      step1: true,
+      step2: false,
+      status1: false,
+      status2: false,
+      live_error: false,
+      live: false,
+      onplay: false,
+      offplay: true
     };
   },
   methods: {
-    sendOtp: function sendOtp(e) {
-      axios.post('/api/service/otp', self.model.contact).then(function (response) {}).catch(function (error) {});
+    onSubmit: function onSubmit(e) {
+      var self = this;
+      var status = self.checkPhoneNumber();
+
+      if (status) {
+        axios.post('/send/otp', {
+          phoneNumber: self.phone
+        }).then(function (response) {
+          self.code = response.data;
+          self.step2 = true;
+          self.step1 = false;
+          self.status1 = false;
+        }).catch(function (error) {
+          self.status1 = true;
+        });
+      }
+    },
+    onSubmitOtp: function onSubmitOtp(e) {
+      var self = this;
+
+      if (self.code == self.otp) {
+        self.status1 = false;
+        self.status2 = false;
+        axios.post('/event/live', {
+          phoneNumber: self.phone
+        }).then(function (response) {
+          self.live = response.data;
+          self.onplay = true;
+          self.offplay = false;
+          self.live_error = false;
+        }).catch(function (error) {
+          self.live_error = true;
+        });
+      } else {
+        self.status2 = true;
+      }
+    },
+    checkPhoneNumber: function checkPhoneNumber() {
+      if (this.phone) {
+        return true;
+      }
+
+      self.status = true;
     }
   }
 });
@@ -36653,71 +36732,217 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container wow animated fadeInLeft bottom-spacing" },
-      [
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col-md-8 align-center wow animated fadeInLeft" },
-            [
-              _c("h1", { staticClass: "arrow" }, [
-                _vm._v("سرویس پخش زنده، تله موزیک")
-              ]),
-              _c("hr"),
-              _vm._v(" "),
+  return _c("div", [
+    _vm.onplay
+      ? _c("div", { staticClass: "row" }, [
+          _c("iframe", {
+            staticClass: "col-lg-12 col-md-12 col-sm-12",
+            staticStyle: { height: "700px" },
+            attrs: { src: "{ live.embeddedLink }" }
+          })
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.offplay
+      ? _c(
+          "div",
+          { staticClass: "container wow animated fadeInLeft bottom-spacing" },
+          [
+            _c("div", { staticClass: "row" }, [
               _c(
-                "form",
+                "div",
                 {
-                  staticClass:
-                    "center-block align-center col-lg-5 col-md-5 col-sm-10 col-xs-10",
-                  attrs: {
-                    action: "notify-me.php.html",
-                    id: "notifyMe",
-                    method: "POST"
-                  }
+                  staticClass: "col-md-8 align-center wow animated fadeInLeft"
                 },
                 [
-                  _c(
-                    "div",
-                    { staticClass: "input-group col-lg-12 align-center" },
-                    [
-                      _c("input", {
-                        staticClass: "form-control email-add",
-                        attrs: {
-                          type: "text",
-                          name: "email",
-                          placeholder: "شماره همراه خود را وارد کنید"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "button",
+                  _c("h1", { staticClass: "arrow" }, [
+                    _vm._v("سرویس پخش زنده، تله موزیک")
+                  ]),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _vm.step1
+                    ? _c(
+                        "form",
                         {
-                          staticClass: "btn btn-default notify-button",
-                          attrs: { type: "submit" }
+                          staticClass:
+                            "center-block align-center col-lg-6 col-md-6 col-sm-10 col-xs-12",
+                          attrs: { id: "notifyMe", method: "POST" },
+                          on: {
+                            submit: function($event) {
+                              $event.preventDefault()
+                              return _vm.onSubmit($event)
+                            }
+                          }
                         },
-                        [_vm._v("ورود")]
+                        [
+                          _vm.status1
+                            ? _c(
+                                "div",
+                                {
+                                  staticClass: "alert alert-danger",
+                                  attrs: { role: "alert" }
+                                },
+                                [
+                                  _c("p", [
+                                    _vm._v("شماره همراه  وارد شده اشتباه است")
+                                  ])
+                                ]
+                              )
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "input-group col-lg-12 align-center"
+                            },
+                            [
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.phone,
+                                    expression: "phone"
+                                  }
+                                ],
+                                staticClass: "form-control email-add",
+                                attrs: {
+                                  type: "text",
+                                  required: "required",
+                                  name: "text",
+                                  placeholder: "شماره همراه خود را وارد کنید"
+                                },
+                                domProps: { value: _vm.phone },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.phone = $event.target.value
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-default notify-button",
+                                  attrs: { type: "submit" }
+                                },
+                                [_vm._v("ثبت نام")]
+                              )
+                            ]
+                          )
+                        ]
                       )
-                    ]
-                  )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.step2
+                    ? _c(
+                        "form",
+                        {
+                          staticClass:
+                            "center-block align-center col-lg-6 col-md-6 col-sm-10 col-xs-12",
+                          attrs: { id: "notifyMe", method: "POST" },
+                          on: {
+                            submit: function($event) {
+                              $event.preventDefault()
+                              return _vm.onSubmitOtp($event)
+                            }
+                          }
+                        },
+                        [
+                          _c("h1", [
+                            _vm._v(
+                              "کد احتراز به شماره " +
+                                _vm._s(_vm.phone) +
+                                " ارسال شد."
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _vm.status2
+                            ? _c(
+                                "div",
+                                {
+                                  staticClass: "alert alert-danger",
+                                  attrs: { role: "alert" }
+                                },
+                                [_c("p", [_vm._v("کد وارد شده اشتباه است.")])]
+                              )
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "input-group col-lg-12 align-center"
+                            },
+                            [
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.otp,
+                                    expression: "otp"
+                                  }
+                                ],
+                                staticClass: "form-control email-add",
+                                attrs: {
+                                  type: "text",
+                                  required: "required",
+                                  name: "text",
+                                  placeholder: "کد خود را واردی کنید"
+                                },
+                                domProps: { value: _vm.otp },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.otp = $event.target.value
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-default notify-button",
+                                  attrs: { type: "submit" }
+                                },
+                                [_vm._v("ورود")]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.live_error
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "alert alert-danger",
+                          attrs: { role: "alert" }
+                        },
+                        [
+                          _c("p", [
+                            _vm._v(
+                              "در حال حاضر رویدادی بای پخش وجود ندارد، در اولین رویداد از طریق پیامک اطلاع رسانی خواهد شد."
+                            )
+                          ])
+                        ]
+                      )
+                    : _vm._e()
                 ]
               )
-            ]
-          )
-        ])
-      ]
-    )
-  }
-]
+            ])
+          ]
+        )
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -48827,9 +49052,12 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_EventComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/EventComponent.vue */ "./resources/js/components/EventComponent.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -48848,7 +49076,8 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('event-component', __webpack_require__(/*! ./components/EventComponent.vue */ "./resources/js/components/EventComponent.vue"));
+
+Vue.component('event', _components_EventComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
