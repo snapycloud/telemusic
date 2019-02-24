@@ -350,7 +350,7 @@
 		
 		<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="assets/js/jquery-ui-1.10.4.min.js"></script>
-		
+		<script type="text/javascript" src="assets/js/app.js"></script>
 		<!--VIMEO VIDEO-->     
         <script type="text/javascript" src="assets/js/venobox.js"></script>
 
@@ -395,7 +395,7 @@
 		
 		<!-- INITIALIZATION  -->
 		<script type="text/javascript" src="assets/js/init.js"></script>
-		<script type="text/javascript" src="assets/js/app.js"></script>
+		
 
     </body>
 </html>
