@@ -9,24 +9,21 @@ class UserRegister extends Controller
     public function postRegister(Request $request)
     {
     	$request->validate([
-    		'userName' => 'email|required',
-    		'lastName' => 'required',
-    		'phoneNumber' => 'required'
+    		'email' => 'email|required',
+    		'name' => 'required'
     	]);
+        dd($request->all());
 
-    	$userName = $request->get('userName');
-    	$lastName = $request->get('lastName');
-    	$phoneNumber = $request->get('phoneNumber');
+    	$userName = $request->get('name');
+    	$mail = $request->get('mail');
 
     	if($this->userExists($userName)) {
-    		return back()->withInput()->withErrors(['msg', 'The Message']);
+    		return [
+                'message' => 'User Exits'
+            ];
     	}
     	
-    	$this->register($userName, $lastName, $phoneNumber);
-
-    	return view('home', [
-            'status' => true
-        ]);
+    	return $this->register($userName, $lastName, $phoneNumber);
 	}
 
     public function sendClientOtp(Request $request)

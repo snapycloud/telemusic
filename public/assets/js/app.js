@@ -1976,6 +1976,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     if (this.active) {
@@ -1987,11 +1990,24 @@ __webpack_require__.r(__webpack_exports__);
     return {
       plan: '',
       name: '',
-      email: ''
+      email: '',
+      error: false
     };
   },
   methods: {
-    onSubmit: function onSubmit(e) {}
+    onSubmit: function onSubmit(e) {
+      var self = this;
+      axios.post('/user/register', {
+        plan: 'free',
+        name: self.name,
+        email: self.email
+      }).then(function (response) {
+        self.code = response.data;
+        console.log(response);
+      }).catch(function (error) {
+        self.error = true;
+      });
+    }
   }
 });
 
@@ -2864,20 +2880,97 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "wrap-contact100" }, [
+        _vm.error
+          ? _c(
+              "div",
+              { staticClass: "alert alert-danger", attrs: { role: "alert" } },
+              [_c("p", [_vm._v("اطلاعات وارد شده اشتباه است")])]
+            )
+          : _vm._e(),
+        _vm._v(" "),
         _c(
           "form",
           {
             staticClass: "contact100-form validate-form text-right",
-            attrs: { _lpchecked: "1" }
+            attrs: { _lpchecked: "1" },
+            on: {
+              submit: function($event) {
+                $event.preventDefault()
+                return _vm.onSubmit($event)
+              }
+            }
           },
           [
             _c("span", { staticClass: "contact100-form-title" }, [
               _vm._v("اشتراک انتخاب شده: " + _vm._s(_vm.plan))
             ]),
             _vm._v(" "),
-            _vm._m(0),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "text-right wrap-input100 rs1-wrap-input100 validate-input"
+              },
+              [
+                _c("span", { staticClass: "label-input100 " }, [
+                  _vm._v("نام خود را وارد کنید *")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.name,
+                      expression: "name"
+                    }
+                  ],
+                  staticClass: "input100",
+                  attrs: { type: "text", placeholder: "" },
+                  domProps: { value: _vm.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.name = $event.target.value
+                    }
+                  }
+                })
+              ]
+            ),
             _vm._v(" "),
-            _vm._m(1),
+            _c(
+              "div",
+              { staticClass: "wrap-input100 rs1-wrap-input100 validate-input" },
+              [
+                _c("span", { staticClass: "label-input100" }, [
+                  _vm._v("ایمیل خود را وارد کنی *")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.email,
+                      expression: "email"
+                    }
+                  ],
+                  staticClass: "input100",
+                  attrs: { type: "text", placeholder: "" },
+                  domProps: { value: _vm.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.email = $event.target.value
+                    }
+                  }
+                })
+              ]
+            ),
             _vm._v(" "),
             _c("button", { staticClass: "btn-effect text-center ui-link" }, [
               _vm._v("عضویت ")
@@ -2888,48 +2981,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "text-right wrap-input100 rs1-wrap-input100 validate-input"
-      },
-      [
-        _c("span", { staticClass: "label-input100 " }, [
-          _vm._v("نام خود را وارد کنید *")
-        ]),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "input100",
-          attrs: { type: "text", name: "name", placeholder: "" }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "wrap-input100 rs1-wrap-input100 validate-input" },
-      [
-        _c("span", { staticClass: "label-input100" }, [
-          _vm._v("ایمیل خود را وارد کنی *")
-        ]),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "input100",
-          attrs: { type: "text", name: "email", placeholder: "" }
-        })
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

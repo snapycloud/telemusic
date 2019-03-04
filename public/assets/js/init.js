@@ -202,7 +202,7 @@ jQuery( document ).ready(function( $ ) {
 	
 		
 	/** Subscribe JS **/
-	$("#notifyMe").notifyMe(); // Activate notifyMe plugin on a '#notifyMe' element 
+	// $("#notifyMe").notifyMe(); // Activate notifyMe plugin on a '#notifyMe' element 
 
 
 	/*** Overlay close*********/

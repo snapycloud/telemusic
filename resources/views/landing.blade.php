@@ -94,7 +94,7 @@
 			  <img src="assets/img/backgrounds/bg1.jpg" alt="Cinelli">
 			  
 			</div>
-			<nav class="slides-navigation" >
+			<nav class="slides-navigation" style="display: none;">
 			  <a href="#" class="next  fa fa-2x fa-chevron-right"></a>
 			  <a href="#" class="prev  fa fa-2x fa-chevron-left"></a>
 			</nav>
