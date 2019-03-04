@@ -21,9 +21,13 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 import Event from './components/EventComponent.vue';
+import Register from './components/RegisterComponent.vue';
+import Plan from './components/PlanComponent.vue';
 
 
 Vue.component('event', Event);
+Vue.component('register', Register);
+Vue.component('plan', Plan);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

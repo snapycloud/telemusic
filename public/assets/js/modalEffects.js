@@ -43,10 +43,10 @@ var ModalEffects = (function() {
 				}
 			});
 
-			close.addEventListener( 'click', function( ev ) {
-				ev.stopPropagation();
-				removeModalHandler();
-			});
+			// close.addEventListener( 'click', function( ev ) {
+			// 	ev.stopPropagation();
+			// 	removeModalHandler();
+			// });
 
 		} );
 

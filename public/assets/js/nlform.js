@@ -20,7 +20,8 @@
 
 	function NLForm( el ) {	
 		this.el = el;
-		this.overlay = this.el.querySelector( '.nl-overlay' );
+		console.log(el);
+		// this.overlay = this.el.querySelector( '.nl-overlay' );
 		this.fields = [];
 		this.fldOpen = -1;
 		this._init();

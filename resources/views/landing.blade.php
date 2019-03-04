@@ -12,15 +12,18 @@
 		<!-- TITLE -->
 		<title>Telemusic</title>
 			
-		<!-- DESCRIPTION -->		
-		<meta name="description" content="Responsive Parallax Event & Music Theme" />
-		<meta name="keywords"  content="Event, Coming Soon, Concert, Conference, Counter, Exhibition, Festival, Landing Page, Music, One Page, Registration Form, Seminar, Subscription, Mailchimp" />
-		<meta name="author" content="Multia-Studio" />
+		<meta name="description" content="Telemusic" />
+		<meta name="keywords"  content="Telemusic" />
+		<meta name="author" content="snppbit-Studio" />
+
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,200,100,800,900' rel='stylesheet' type='text/css'> 
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 
 		<!-- STYLESHEETS -->
 		<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
 		<link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
 		<link href="{{ asset('assets/css/flexslider.css') }}" rel="stylesheet" >
+		<link href="{{ asset('assets/css/superslides.css') }}" rel="stylesheet" >
 		<link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
 		<link href="{{ asset('assets/css/schedule.css') }}" rel="stylesheet">
 		<link href="{{ asset('assets/css/gridgallery.css') }}" rel="stylesheet" type="text/css"  />
@@ -42,9 +45,9 @@
 	  
 		
 			
-		<!-- <div class="preloader">
+		<div class="preloader">
 		<div class="status"></div>
-		</div> -->
+		</div>
 		
 		
 		
@@ -64,10 +67,11 @@
 				   <div class="collapse navbar-collapse" id="example-navbar-collapse">
 					  <ul class="nav navbar-nav">
 					  	<li><a href="#sec_1">صفحه اصلی</a></li>
+					  	<li><a data-scroll href="#responsive">رویداد‌های آنلاین</a></li>
+					  	<li><a data-scroll href="#weblog">وبلاگ</a></li>
+					  	<li><a data-scroll href="#sponsers">حامیان</a></li>
 					  	<li><a class="md-trigger data-scroll href="#" data-modal="modal-11">قوانین</a></li>
 						<li><a data-scroll href="#intro">درباره ما</a></li>
-						<li><a data-scroll href="#responsive">رویداد‌های آنلاین</a></li>
-						<li><a data-scroll href="#sponsers">حامیان</a></li>
 						<li><a data-scroll href="#contact">تماس با ما</a></li>
 					  </ul>
 				   </div>
@@ -81,14 +85,34 @@
 <div id="app">
 		<!--HOME-->		
 		<section id="sec_1" class="autoheight">
+
+				<!--SLIDER-->
+		<div id="slides">
+			<div class="slides-container">
+			  <img src="assets/img/backgrounds/bg1.jpg" alt="Cinelli">
+			  <img src="assets/img/backgrounds/bg1.jpg" alt="Surly">
+			  <img src="assets/img/backgrounds/bg1.jpg" alt="Cinelli">
+			  
+			</div>
+			<nav class="slides-navigation" >
+			  <a href="#" class="next  fa fa-2x fa-chevron-right"></a>
+			  <a href="#" class="prev  fa fa-2x fa-chevron-left"></a>
+			</nav>
+		</div>
+		<!--/SLIDER-->
+
 			<div class="home-bg"></div>
-			<div class="col-lg-12 landing-text-pos align-center">
+			<div class="col-lg-12 landing-text-pos align-center" style="z-index: 2">
 				<!-- <h1 class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="1s">تله‌موزیک</h1> -->
 				<img class="logo" alt="logo" src="assets/img/logo.png">
 				<h1 class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="1s">اولین رسانه تصویری اختصاصی موسیقی ایران</h1>
 				<hr id="title_hr"/>
 				<p class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="1s">رویداد آنلاین، ۲۱ اسفند  ۱۳۹۷</p>
-				<a class="learn-more-btn btn-effect wow animated fadeIn" data-wow-duration="0.5s" data-wow-delay="1.5s" data-scroll href="#swag">اکنون ثبت نام کن</a>
+				<div>
+				<a class="btn-learn-more btn-effect wow animated fadeIn" data-wow-duration="0.5s" data-wow-delay="1.5s" data-scroll href="#features">دانلود</a>
+				<a class="btn-learn-more btn-effect wow animated fadeIn" data-wow-duration="0.5s" data-wow-delay="1.5s" data-scroll href="#swag">اکنون ثبت نام کن</a>	
+				</div>
+				
 			</div>
 		</section>
 		<!--/HOME-->
@@ -111,7 +135,7 @@
         <!--FEATURES-->	
         <section class="features text-center" id="features">
 			<div class="row">
-				<div class="container col-lg-12 col-md-12 features-md">          
+				<div class="container col-lg-12 col-md-12 features-md">       
 					<div class="row">
 						<div class="col-md-12">
 							<div class="features-wrapper">
@@ -163,70 +187,15 @@
 		
 		 <!--TICKETS-->        
 		<section id="portfolio" class="portfolio text-center section-padding">
-			<div class="container">
-				<div class="row">
-				  <div class="col-md-12">
-					<h1 class="arrow">اشتراک‌های محتوای تولیدی کاربران </h1><hr><p></p>
-				  </div>
-				</div>
-				<div class="row">
-					<div class="pricing-wrap">                
-						<ul class="slides">
-							<li>
-								<div class="col-md-offset-3 col-md-3 col-sm-6 col-xs-6 wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-									<ul class="planContainer">
-										<li class="title"><h2>رایگان</h2></li>
-										<li class="button"><a data-scroll class="btn-effect" href="#swag">ثبت نام</a></li>
-									</ul>             
-								</div>
-							  
-								<div class=" col-md-3 col-sm-6 col-xs-6 wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-									<ul class="planContainer">
-										<li class="title"><h2 class="bestPlanTitle">پیشرفته</h2></li>
-										<li class="button"><a data-scroll class="btn-effect" href="#swag">ثبت نام</a></li>
-									</ul>
-								</div>
-							</li>
-						</ul>                
-					</div>
-				</div>
-			</div>
+			<plan></plan>
         </section>
 		<!--/PRICING-->
         
         <!--REGISTER FORM-->	
         <section id="swag" class="swag text-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-9 align-center">
-						<form id="nl-form" class="nl-form " style="direction: rtl;">
-							سلام، اسم من  
-							<input id="name" type="text" name="name" placeholder="نام شما" data-subline="نام"/>
-							<br>
-							می خواهم از سرویس اشتراکی ثبت محتوا در تله موزیک استفاده کنم
-							<br>
-							انتخاب سرویس
-							<select id="field_1">
-								<option value="1" selected>رایگان</option>
-								<option value="2">پیشرفته</option>
-							</select> 
-							<br>
-							ایمیل من 
-							<input id="email1" type="text" name="email" placeholder="ایمیل" data-subline="ایمیل"/>									
-							<div class="nl-submit-wrap">
-								<button class="nl-submit btn-effect" type="submit" id="submit_btn">ارسال درخواست</button>
-							</div>				
-							<div id="result"></div>
-							<div class="nl-overlay"></div>
-						</form>
 
+					<register></register>
 
-						<div class="col-md-12 tc"><p>لطفا<button class="md-trigger" data-modal="modal-11"> شرایط و ضوابط</button>را با دقت مطالعه کنید.</p></div>
-						<!-- the overlay element -->
-						<div class="md-overlay"></div>
-					</div>
-				</div>
-			</div>
         </section>
 		<!-- /REGISTER FORM -->
 
@@ -308,7 +277,7 @@
 				<div class="row">
 					<div class="col-md-6 align-center">
 						<ul class="legals">
-							<li><button class="md-trigger " data-modal="modal-11">قوانین و شرایط استفاده</button></li>
+							{{-- <li><button class="md-trigger " data-modal="modal-11">قوانین و شرایط استفاده</button></li> --}}
 						</ul>
 					</div>
 					<div class="md-modal md-effect-9" id="modal-11">
@@ -338,10 +307,18 @@
 									نام کانال: پس از انتخاب نام کانال، چنانچه این نام مربوط به برندها و مارک‎های تجاری خاص و یا وبسایت‎های ثبت شده باشد، در صورت تماس نمایندگان رسمی این شخصیت‎های حقوقی، امتیاز استفاده از نام کانال پس از مکاتبه با دارنده کانال، به آن شخص اعطا خواهد شد.
 									</p>
 								</div>
-								<button class="md-close"><i class="fa fa-times" style="margin-left: -25px;"></i> خروج</button>
 							</div>
 						</div>
-					</div> 
+					</div>
+
+					            <div class="col-12 text-center">
+<img id = 'jxlzrgvjnbqeesgtjzpewlao' style = 'cursor:pointer' onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=132074&p=rfthxlaouiwkobpdjyoeaods", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = 'logo-samandehi' src = 'https://logo.samandehi.ir/logo.aspx?id=132074&p=nbpdqftiodrflymayndtshwl' />
+              <br>
+<hr>
+              <small>© Telemusic 2018, All rights reserved.</small>
+            </div>
+
+
 					<div class="md-overlay"></div>
 				</div>
 			</div>
@@ -350,6 +327,9 @@
 		
 		<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="assets/js/jquery-ui-1.10.4.min.js"></script>
+		<script type="text/javascript" src="assets/js/hammer.min.js"></script>	
+		<script type="text/javascript" src="assets/js/jquery.mobile-1.4.3.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.superslides.js"></script>
 		<script type="text/javascript" src="assets/js/app.js"></script>
 		<!--VIMEO VIDEO-->     
         <script type="text/javascript" src="assets/js/venobox.js"></script>
@@ -357,13 +337,13 @@
         <!--3D GALLERY-->
         <script type="text/javascript" src="assets/js/classie.grid.gallery.js"></script>
 		<script type="text/javascript" src="assets/js/modernizr.gridgallery.js"></script>		
-		<!-- <script type="text/javascript" src="assets/js/cbpGridGallery.js"></script> -->
+		<script type="text/javascript" src="assets/js/cbpGridGallery.js"></script>
  
 		<script type="text/javascript" src="assets/js/classie.js" ></script>
 		<script type="text/javascript" src="assets/js/modalEffects.js" ></script>
        
-	    <script type="text/javascript" src="assets/js/nlform.js" ></script>
-		<script>var nlform = new NLForm( document.getElementById( 'nl-form' ) );</script>
+	    {{-- <script type="text/javascript" src="assets/js/nlform.js" ></script> --}}
+		<script>//var nlform = new NLForm( document.getElementById( 'nl-form' ) );</script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js" ></script>
         
 		<!-- TEAM SLIDER  -->
@@ -371,7 +351,7 @@
 		
 		<!-- SCHEDULE TABS  -->
         <script type="text/javascript" src="assets/js/modernizr.js" ></script>
-		<script type="text/javascript" src="assets/js/cbpFWTabs.js" ></script>		
+		{{-- <script type="text/javascript" src="assets/js/cbpFWTabs.js" ></script>		 --}}
 		
 		<!--SPONSOR SLIDER-->
 		<script type="text/javascript" src="assets/js/jssor.core.js"></script>

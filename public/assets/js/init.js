@@ -15,6 +15,7 @@
 	   i) Subscribe
 	   j) Nice Scroll
 	   h) Placeholder for ie9
+	3.Landing Slider Js
 
 
 /*************************************/
@@ -79,8 +80,8 @@ jQuery( document ).ready(function( $ ) {
 	});
 	
 	/*** 3D Gallery *********/
-	new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-	new CBPFWTabs( document.getElementById( 'tabs-ui' ) );
+	// new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+	// new CBPFWTabs( document.getElementById( 'tabs-ui' ) );
 	
 	/********Vimeo Video*****************/
 	$('.venobox').venobox({
@@ -198,73 +199,7 @@ jQuery( document ).ready(function( $ ) {
 	
 	wow.init();
 		
-		
-
-	/** Registration Form **/
-	$("#submit_btn").click(function() 
-	{ 
-
-		var filter = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-		
-		var e = document.getElementById("field_1");
-		var user_type = e.options[e.selectedIndex].text;
-		
 	
-		var person_name = document.getElementById("name").value;
-		var user_email = document.getElementById("email1").value;
-		
-		var proceed = true;
-		
-		
-		if(person_name == ""){ 
-			var error1 = '<div class="enter-name col-lg-3 align-center"> Enter the name </div>';
-			jQuery("#result").hide().html(error1).fadeIn(500);
-			proceed = false;
-			return false;
-		}
-		
-		if(user_email== ""){
-			var error2 = '<div class="enter-email col-lg-3 align-center"> Enter the email </div>';
-			jQuery("#result").hide().html(error2).fadeIn(500);
-			proceed = false;
-			
-		}
-		else if(!filter.test(user_email)) {
-			var invalid = '<div class="invalid-email col-lg-3 align-center"> Invalid Email </div>';
-			jQuery("#result").hide().html(invalid).fadeIn(500);
-			proceed = false;
-			
-		}
-	
-		if (proceed) //everything looks good! proceed...
-		{
-			
-			//data to be sent to server
-			var post_data = {
-				'userName': person_name,
-				'userType': user_type,
-				'userEmail': user_email,
-
-			}
-			
-			//Ajax post data to server
-			jQuery.post('contact_me.php', post_data, function(response) {
-				//load json data from server and output message
-				if (response.type == 'error') {
-					var output = '<div class="error col-lg-3 align-center">' + response.text + '</div>';
-				} else {
-					var output = '<div class="success col-lg-3 align-center">' + response.text + '</div>';
-					//reset values in all input fields
-					
-				}
-				jQuery("#result").hide().html(output).fadeIn(500);
-				
-			}, 'json');
-		}
-
-		return false;
- 
-	});
 		
 	/** Subscribe JS **/
 	$("#notifyMe").notifyMe(); // Activate notifyMe plugin on a '#notifyMe' element 
@@ -289,13 +224,45 @@ jQuery( document ).ready(function( $ ) {
 	 
 	 /** Placeholder JS call **/
 	$('input[type=text], textarea').placeholder();	
-	panel();	
+		
 		
 });
 
-function panel(){
+/*************************************/
+/* Landing Slider Js */
+/**************************************/
 
-	jQuery('.show-panel').click(function () {
-    jQuery('.panel').slideToggle();
-});
+	var $slides = $('#slides');
+
+	Hammer($slides[0]).on("swipeleft", function(e) {
+	$slides.data('superslides').animate('next');
+	});
+
+	Hammer($slides[0]).on("swiperight", function(e) {
+	$slides.data('superslides').animate('prev');
+	});
+
+	$slides.superslides({
+	hashchange: true
+	});
+	$(".home-bg").swiperight(function() {  
+	$slides.data('superslides').animate('prev');		  
+	});  
+	$(".home-bg").swipeleft(function() {  
+	$slides.data('superslides').animate('next'); 
+	});  
+	$(".landing-text-pos").swiperight(function() {  
+	$slides.data('superslides').animate('prev');		  
+	});  
+	$(".landing-text-pos").swipeleft(function() {  
+	$slides.data('superslides').animate('next'); 
+	});  
+
+	var currentPane = 0;
+setTimeout(playSlides, 5000);
+function playSlides() {
+	jQuery('.next').click()
+    setTimeout(playSlides,5000);
 }
+
+playSlides()
