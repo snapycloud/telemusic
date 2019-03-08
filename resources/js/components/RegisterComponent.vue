@@ -2,14 +2,16 @@
                 <div class="container" >
                 <div class="row">
      <div class="wrap-contact100">
+
     <div v-if="error"  class="alert alert-danger" role="alert">
         <p style="color: black">اطلاعات وارد شده اشتباه است</p>
       </div>
     <div v-if="confilct"  class="alert alert-success" role="alert">
         <p style="color: black">اطلاعت کاربری شما بعد از بررسی و تایید به ایمیلتان ارسال خواهید شد</p>
       </div>
+      
     <form v-on:submit.prevent="onSubmit" class="contact100-form validate-form text-right" _lpchecked="1">
-        <span class="contact100-form-title">اشتراک انتخاب شده: {{ plan }}</span>
+        <span class="contact100-form-title">ثبت اشتراک جدید</span>
         <div class="text-right wrap-input100 rs1-wrap-input100 validate-input">
             <span class="label-input100 ">نام خود را وارد کنید *</span>
             <input class="input100" type="text" v-model='name' placeholder="">

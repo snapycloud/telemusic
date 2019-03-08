@@ -2002,6 +2002,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {},
   props: ['active'],
@@ -2986,7 +2988,7 @@ var render = function() {
           },
           [
             _c("span", { staticClass: "contact100-form-title" }, [
-              _vm._v("اشتراک انتخاب شده: " + _vm._s(_vm.plan))
+              _vm._v("ثبت اشتراک جدید")
             ]),
             _vm._v(" "),
             _c(

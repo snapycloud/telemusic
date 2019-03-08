@@ -66,6 +66,8 @@
 				   </div>
 				   <div class="collapse navbar-collapse" id="example-navbar-collapse">
 					  <ul class="nav navbar-nav">
+					  	<li><a data-scroll href="#swag"><img width="20px" src="{{ asset('assets/img/shopping-cart.png') }}" alt=""></a></li>
+
 					  	<li><a href="#sec_1">صفحه اصلی</a></li>
 					  	<li><a data-scroll href="#responsive">رویداد‌های آنلاین</a></li>
 					  	<li><a data-scroll href="#weblog">وبلاگ</a></li>
@@ -377,6 +379,6 @@
 		<script type="text/javascript" src="assets/js/init.js"></script>
 		
  <script type="text/javascript">!function(){function t(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,localStorage.getItem("rayToken")?t.src="https://app.raychat.io/scripts/js/"+o+"?rid="+localStorage.getItem("rayToken")+"&href="+window.location.href:t.src="https://app.raychat.io/scripts/js/"+o;var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var e=document,a=window,o="71765e03-fcbe-4db6-bc9a-017261dede4c";"complete"==e.readyState?t():a.attachEvent?a.attachEvent("onload",t):a.addEventListener("load",t,!1)}();</script> 
- 
+
     </body>
 </html>
