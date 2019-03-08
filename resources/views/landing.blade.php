@@ -109,7 +109,7 @@
 				<hr id="title_hr"/>
 				<p class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="1s">رویداد آنلاین، ۲۱ اسفند  ۱۳۹۷</p>
 				<div>
-				<a class="btn-learn-more btn-effect wow animated fadeIn" data-wow-duration="0.5s" data-wow-delay="1.5s" data-scroll href="#features">دانلود</a>
+				<a class="btn-learn-more btn-effect wow animated fadeIn" data-wow-duration="0.5s" data-wow-delay="1.5s" data-scroll href="#features">دانلود اپلیکیشن</a>
 				<a class="btn-learn-more btn-effect wow animated fadeIn" data-wow-duration="0.5s" data-wow-delay="1.5s" data-scroll href="#swag">اکنون ثبت نام کن</a>	
 				</div>
 				
@@ -124,7 +124,7 @@
 					<div class="col-lg-8 align-center about">
 						<h1 class="arrow text-right">درباره تله‌موزیک</h1>
 						<hr>
-						<p class="lead text-right">تله‌موزیک آینه جهان‌نمای دنیای موسیقی است؛ موجوعه‌ای بی‌نظیر از بهترین کنسرت‌ها، فیلم‌های مستند، موزیک ویدیوها، زندگی‌نامه چهره‌های مطرح موسیقی و تاریخ موسیقی ملل که همه آنها در یک اپلیکیشن و روی گوشی شما قابل دسترس است. در حال حاضر نسخه اندروید این اپلیکیشن به صورت آزمایشی منتشر شده است و به زودی نسخه آی‌اواس اپلیکیشن تله‌موزیک هم عرضه خواهد شد</p>
+						<p class="lead text-right" style="text-align: justify !important;">تله‌موزیک آینه جهان‌نمای دنیای موسیقی است؛ موجوعه‌ای بی‌نظیر از بهترین کنسرت‌ها، فیلم‌های مستند، موزیک ویدیوها، زندگی‌نامه چهره‌های مطرح موسیقی و تاریخ موسیقی ملل که همه آنها در یک اپلیکیشن و روی گوشی شما قابل دسترس است. در حال حاضر نسخه اندروید این اپلیکیشن به صورت آزمایشی منتشر شده است و به زودی نسخه آی‌اواس اپلیکیشن تله‌موزیک هم عرضه خواهد شد</p>
 					</div>
 				</div>
 			</div>
@@ -251,7 +251,7 @@
 							
 
 							<h2><span>آدرس</span></h2>
-							<p>تهران، خیابان گیشا<br> کوچه ۳۷ا، پلاک ۶۷</p>
+							<p>تهران، خیابان گیشا<br> خیابان ۳۷(ولی‌زاده)، پلاک ۶۷</p>
 						</div>
 					</div>
 				</div>
