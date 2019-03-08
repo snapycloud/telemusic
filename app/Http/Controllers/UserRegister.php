@@ -12,18 +12,15 @@ class UserRegister extends Controller
     		'email' => 'email|required',
     		'name' => 'required'
     	]);
-        dd($request->all());
 
-    	$userName = $request->get('name');
-    	$mail = $request->get('mail');
+    	$name = $request->get('name');
+    	$email = $request->get('email');
 
-    	if($this->userExists($userName)) {
-    		return [
-                'message' => 'User Exits'
-            ];
+    	if($this->userExists($email)) {
+    		return response('Conflict', 409);
     	}
     	
-    	return $this->register($userName, $lastName, $phoneNumber);
+    	return $this->register($email, $name);
 	}
 
     public function sendClientOtp(Request $request)

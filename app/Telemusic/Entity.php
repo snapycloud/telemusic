@@ -4,22 +4,31 @@ namespace App\Telemusic;
 
 trait Entity
 {
-	public function register($userName, $lastName, $phoneNumber)
+	public function register($userName, $lastName)
 	{
+		dd($lastName, $userName);
 		$result = $this->request('POST', 'User', [
 					"userName" => $userName,
 				    'isActive' => false,
 				    'isAdmin' => false,
 				    "lastName" => $lastName,
+				    "salutationName" => "Mr.",
 				    "password" => "123456",
 					"passwordConfirm" => "123456",
-				    'phoneNumber' => $phoneNumber,
 				    "rolesIds" => [
 				    	"5c2bebe3d2535171d"
 				    ],
 				    "rolesNames" => [
 				    	"5c2bebe3d2535171d" => "User Frontend"
 				    ],
+				    "emailAddress" => $userName,
+				    "emailAddressData" => [
+				    	"emailAddress" => $userName,
+				    	"invalid" => false,
+				    	"lower" => $userName,
+				    	"optOut" => false,
+				    	"primary" => true
+				    ]
 				]);
 
 		return $result;
