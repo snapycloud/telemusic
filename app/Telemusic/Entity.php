@@ -6,7 +6,7 @@ trait Entity
 {
 	public function register($userName, $lastName)
 	{
-		dd($lastName, $userName);
+		
 		$result = $this->request('POST', 'User', [
 					"userName" => $userName,
 				    'isActive' => false,
