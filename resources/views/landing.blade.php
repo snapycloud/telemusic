@@ -62,7 +62,7 @@
 						 <span class="icon-bar"></span>
 						 <span class="icon-bar"></span>
 					  </button>
-					   <a class="navbar-brand" data-scroll href="#sec_1"><img src="assets/img/logo.png" alt="logo"/></a>
+					   <a class="navbar-brand" data-scroll href="#sec_1"><img width="170px" src="assets/img/logo.png" alt="logo"/></a>
 				   </div>
 				   <div class="collapse navbar-collapse" id="example-navbar-collapse">
 					  <ul class="nav navbar-nav">
