@@ -20,10 +20,6 @@
             <span class="label-input100">ایمیل خود را وارد کنید *</span>
             <input class="input100" type="text" v-model="data.email" placeholder="">
         </div>
-        <div class="wrap-input100 rs1-wrap-input100 validate-input">
-            <span class="label-input100">ایمیل خود را وارد کنید *</span>
-            <input class="input100" type="text" v-model="email" placeholder="">
-        </div>
         <div class="wrap-input100 rs1-wrap-input200 validate-input">
             <span class="label-input100">پیام خود را وارد کنید *</span>
             <input class="input100" type="text" v-model="data.message" placeholder="">

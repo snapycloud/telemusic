@@ -16,8 +16,8 @@
 		<meta name="keywords"  content="Telemusic" />
 		<meta name="author" content="snppbit-Studio" />
 
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,200,100,800,900' rel='stylesheet' type='text/css'> 
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,200,100,800,900' rel='stylesheet' type='text/css'> 
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 
 		<!-- STYLESHEETS -->
 		<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
