@@ -2094,10 +2094,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {},
   props: ['active'],
@@ -3289,38 +3285,6 @@ var render = function() {
                         return
                       }
                       _vm.$set(_vm.data, "email", $event.target.value)
-                    }
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "wrap-input100 rs1-wrap-input100 validate-input" },
-              [
-                _c("span", { staticClass: "label-input100" }, [
-                  _vm._v("ایمیل خود را وارد کنید *")
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.email,
-                      expression: "email"
-                    }
-                  ],
-                  staticClass: "input100",
-                  attrs: { type: "text", placeholder: "" },
-                  domProps: { value: _vm.email },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.email = $event.target.value
                     }
                   }
                 })
