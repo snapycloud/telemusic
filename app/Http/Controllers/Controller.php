@@ -16,4 +16,21 @@ class Controller extends BaseController
     {
     	return view('landing');
     }
+
+    public function postCase(Request $request)
+    {
+    	$request->validate([
+    		'email' => 'email|required',
+    		'name' => 'required'
+    	]);
+    	
+    	$data = [
+    		'priority' => 'Normal',
+    		'assignedUserId' => 1,
+    		'status' => 'New',
+    		'site' => 1,
+    		'email' => $request->get('email'),
+    		'description' => $request->get('message')
+    	];
+    }
 }

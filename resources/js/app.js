@@ -24,12 +24,14 @@ import Event from './components/EventComponent.vue';
 import Register from './components/RegisterComponent.vue';
 import Plan from './components/PlanComponent.vue';
 import Alert from './components/AlertComponent.vue';
+import Ticket from './components/TicketComponent.vue';
 
 
 Vue.component('event', Event);
 Vue.component('register', Register);
 Vue.component('plan', Plan);
 Vue.component('alert', Alert);
+Vue.component('ticket', Ticket);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

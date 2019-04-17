@@ -9,3 +9,4 @@ Route::post('/send/otp', 'UserRegister@sendClientOtp');
 Route::post('/event/live', 'UserRegister@getEvent');
 
 Route::post('user/register', 'UserRegister@postRegister'); 
+Route::post('support/ticket', 'Controller@postCase'); 

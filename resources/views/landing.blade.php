@@ -258,6 +258,10 @@
 					</div>
 				</div>
 
+				<div class="row">
+					<ticket></ticket>
+				</div>
+
 				{{-- <div class="row">
 					<div class="col-md-12">
 						<ul class="social-buttons">
