@@ -3207,127 +3207,137 @@ var render = function() {
             )
           : _vm._e(),
         _vm._v(" "),
-        _c(
-          "form",
-          {
-            staticClass: "contact100-form validate-form text-right",
-            attrs: { _lpchecked: "1" },
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.onSubmit($event)
-              }
-            }
-          },
-          [
-            _c("span", { staticClass: "contact100-form-title" }, [
-              _vm._v("ثبت شکایات")
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
+        !_vm.confilct
+          ? _c(
+              "form",
               {
-                staticClass:
-                  "text-right wrap-input100 rs1-wrap-input100 validate-input"
+                staticClass: "contact100-form validate-form text-right",
+                attrs: { _lpchecked: "1" },
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.onSubmit($event)
+                  }
+                }
               },
               [
-                _c("span", { staticClass: "label-input100 " }, [
-                  _vm._v("نام خود را وارد کنید *")
+                _c("span", { staticClass: "contact100-form-title" }, [
+                  _vm._v("ثبت شکایات")
                 ]),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.data.name,
-                      expression: "data.name"
-                    }
-                  ],
-                  staticClass: "input100",
-                  attrs: { type: "text", placeholder: "" },
-                  domProps: { value: _vm.data.name },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "text-right wrap-input100 rs1-wrap-input100 validate-input"
+                  },
+                  [
+                    _c("span", { staticClass: "label-input100 " }, [
+                      _vm._v("نام خود را وارد کنید *")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.data.name,
+                          expression: "data.name"
+                        }
+                      ],
+                      staticClass: "input100",
+                      attrs: { type: "text", placeholder: "" },
+                      domProps: { value: _vm.data.name },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.data, "name", $event.target.value)
+                        }
                       }
-                      _vm.$set(_vm.data, "name", $event.target.value)
-                    }
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "wrap-input100 rs1-wrap-input100 validate-input" },
-              [
-                _c("span", { staticClass: "label-input100" }, [
-                  _vm._v("ایمیل خود را وارد کنید *")
-                ]),
+                    })
+                  ]
+                ),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.data.email,
-                      expression: "data.email"
-                    }
-                  ],
-                  staticClass: "input100",
-                  attrs: { type: "text", placeholder: "" },
-                  domProps: { value: _vm.data.email },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-input100 rs1-wrap-input100 validate-input"
+                  },
+                  [
+                    _c("span", { staticClass: "label-input100" }, [
+                      _vm._v("ایمیل خود را وارد کنید *")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.data.email,
+                          expression: "data.email"
+                        }
+                      ],
+                      staticClass: "input100",
+                      attrs: { type: "text", placeholder: "" },
+                      domProps: { value: _vm.data.email },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.data, "email", $event.target.value)
+                        }
                       }
-                      _vm.$set(_vm.data, "email", $event.target.value)
-                    }
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "wrap-input100 rs1-wrap-input200 validate-input" },
-              [
-                _c("span", { staticClass: "label-input100" }, [
-                  _vm._v("پیام خود را وارد کنید *")
-                ]),
+                    })
+                  ]
+                ),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.data.message,
-                      expression: "data.message"
-                    }
-                  ],
-                  staticClass: "input100",
-                  attrs: { type: "text", placeholder: "" },
-                  domProps: { value: _vm.data.message },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-input100 rs1-wrap-input200 validate-input"
+                  },
+                  [
+                    _c("span", { staticClass: "label-input100" }, [
+                      _vm._v("پیام خود را وارد کنید *")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.data.message,
+                          expression: "data.message"
+                        }
+                      ],
+                      staticClass: "input100",
+                      attrs: { type: "text", placeholder: "" },
+                      domProps: { value: _vm.data.message },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.data, "message", $event.target.value)
+                        }
                       }
-                      _vm.$set(_vm.data, "message", $event.target.value)
-                    }
-                  }
-                })
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  { staticClass: "btn-effect text-center ui-link" },
+                  [_vm._v("ارسال کنید ")]
+                )
               ]
-            ),
-            _vm._v(" "),
-            _c("button", { staticClass: "btn-effect text-center ui-link" }, [
-              _vm._v("ارسال کنید ")
-            ])
-          ]
-        )
+            )
+          : _vm._e()
       ])
     ])
   ])

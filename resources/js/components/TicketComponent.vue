@@ -10,7 +10,7 @@
         <p style="color: black">تیکت شما ثبت شد، از طریق ایمیل پاسخ داداه خواهد شد</p>
       </div>
       
-    <form v-on:submit.prevent="onSubmit" class="contact100-form validate-form text-right" _lpchecked="1">
+    <form v-if="!confilct" v-on:submit.prevent="onSubmit" class="contact100-form validate-form text-right" _lpchecked="1">
         <span class="contact100-form-title">ثبت شکایات</span>
         <div class="text-right wrap-input100 rs1-wrap-input100 validate-input">
             <span class="label-input100 ">نام خود را وارد کنید *</span>
