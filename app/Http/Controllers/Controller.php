@@ -18,10 +18,8 @@ class Controller extends BaseController
 
     public function __construct()
     {
-        $url = 'https://server.app.snapycloud.com';
-        $this->client = new SnapyClient($url);
-        $this->client->setApiKey('2434bacac4b4abf96d0d7fb0ec19fc5c');
-        $this->client->setSecretKey('769fce1f0b7264f9c9371f1cb9598662');
+        $url = 'https://backend.telemusic.ir';
+        $this->client = new SnapyClient($url, 'support', 'ikbiyxas');
     }
 
     public function client()
@@ -44,7 +42,8 @@ class Controller extends BaseController
     	
     	$data = [
     		'priority' => 'Normal',
-    		'assignedUserId' => 1,
+    		'assignedUserId' => "5cb6cda16e15a3534",
+    		'assignedUserName' => "Support",
     		'status' => 'New',
     		'site' => 1,
     		'email' => $request->get('email'),
