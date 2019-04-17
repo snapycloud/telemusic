@@ -45,7 +45,8 @@ class Controller extends BaseController
     		'assignedUserId' => "5cb6cda16e15a3534",
     		'assignedUserName' => "Support",
     		'status' => 'New',
-    		'site' => 1,
+    		'name' => $request->get('name'),
+    		'web' => 1,
     		'email' => $request->get('email'),
     		'description' => $request->get('message')
     	];
