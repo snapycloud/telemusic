@@ -3324,7 +3324,7 @@ var render = function() {
             ),
             _vm._v(" "),
             _c("button", { staticClass: "btn-effect text-center ui-link" }, [
-              _vm._v("عضویت ")
+              _vm._v("ارسال کنید ")
             ])
           ]
         )

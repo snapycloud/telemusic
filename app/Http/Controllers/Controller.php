@@ -21,7 +21,8 @@ class Controller extends BaseController
     {
     	$request->validate([
     		'email' => 'email|required',
-    		'name' => 'required'
+    		'name' => 'required',
+    		'message' => 'required'
     	]);
     	
     	$data = [
@@ -32,5 +33,7 @@ class Controller extends BaseController
     		'email' => $request->get('email'),
     		'description' => $request->get('message')
     	];
+
+    	return $data;
     }
 }

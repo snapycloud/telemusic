@@ -24,7 +24,7 @@
             <span class="label-input100">پیام خود را وارد کنید *</span>
             <input class="input100" type="text" v-model="data.message" placeholder="">
         </div>
-        <button class="btn-effect text-center ui-link">عضویت </button>
+        <button class="btn-effect text-center ui-link">ارسال کنید </button>
     </form>
 </div>
                 </div>
