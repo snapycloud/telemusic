@@ -319,8 +319,9 @@
 
 					            <div class="col-12 text-center">
 <img id = 'jxlzrgvjnbqeesgtjzpewlao' style = 'cursor:pointer' onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=132074&p=rfthxlaouiwkobpdjyoeaods", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = 'logo-samandehi' src = 'https://logo.samandehi.ir/logo.aspx?id=132074&p=nbpdqftiodrflymayndtshwl' />
-              <br><hr>
-                            
+              <hr>
+              <img src="https://trustseal.enamad.ir/logo.aspx?id=115472&p=voXY1t6m1R14FWzA" alt="" onclick="window.open("https://trustseal.enamad.ir/Verify.aspx?id=115472&p=voXY1t6m1R14FWzA", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30")" style="cursor:pointer" id="voXY1t6m1R14FWzA">
+
 <hr>
               <small>© Telemusic 2018, All rights reserved.</small>
             </div>
