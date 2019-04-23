@@ -365,22 +365,9 @@
 		<script type="text/javascript" src="assets/js/jssor.utils.js"></script>
 		<script type="text/javascript" src="assets/js/jssor.slider.js"></script>
 		<script type="text/javascript" src="assets/js/sponsor_init.js"></script>
-		
-		<!-- SMOOTH SCROLL  -->
 		<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
-		
-		<!-- NICE SCROLL  -->
-		<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
-		
-		<!-- SUBSCRIPTION FORM  -->
-		<script type="text/javascript" src="assets/js/notifyMe.js"></script>
-		
 		<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
-		
-		<!-- ANIMATION  -->
 		<script type="text/javascript" src="assets/js/wow.min.js"></script>
-		
-		<!-- INITIALIZATION  -->
 		<script type="text/javascript" src="assets/js/init.js"></script>
 		
  <script type="text/javascript">!function(){function t(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,localStorage.getItem("rayToken")?t.src="https://app.raychat.io/scripts/js/"+o+"?rid="+localStorage.getItem("rayToken")+"&href="+window.location.href:t.src="https://app.raychat.io/scripts/js/"+o;var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var e=document,a=window,o="71765e03-fcbe-4db6-bc9a-017261dede4c";"complete"==e.readyState?t():a.attachEvent?a.attachEvent("onload",t):a.addEventListener("load",t,!1)}();</script> 
