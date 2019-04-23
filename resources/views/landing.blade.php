@@ -45,9 +45,9 @@
 	  
 		
 			
-		<div class="preloader">
+{{-- 		<div class="preloader">
 		<div class="status"></div>
-		</div>
+		</div> --}}
 		
 		
 		
@@ -64,11 +64,11 @@
 					  </button>
 					   <a class="navbar-brand" data-scroll href="#sec_1"><img width="170px" src="assets/img/logo.png" alt="logo"/></a>
 				   </div>
-				   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+				   <div class="collapse navbar-collapse" id="example-navbar-collapse" >
 					  <ul class="nav navbar-nav">
 					  	<li><a data-scroll href="#swag"><img width="20px" src="{{ asset('assets/img/shopping-cart.png') }}" alt=""></a></li>
 
-					  	<li><a href="#sec_1">صفحه اصلی</a></li>
+					  	<li><a data-scroll href="#sec_1">صفحه اصلی</a></li>
 					  	<li><a data-scroll href="#responsive">رویداد‌های آنلاین</a></li>
 					  	<li><a data-scroll href="#weblog">وبلاگ</a></li>
 					  	<li><a data-scroll href="#sponsers">حامیان</a></li>
