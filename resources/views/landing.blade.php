@@ -320,7 +320,7 @@
 					            <div class="col-12 text-center">
 <img id = 'jxlzrgvjnbqeesgtjzpewlao' style = 'cursor:pointer' onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=132074&p=rfthxlaouiwkobpdjyoeaods", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = 'logo-samandehi' src = 'https://logo.samandehi.ir/logo.aspx?id=132074&p=nbpdqftiodrflymayndtshwl' />
               <br><hr>
-                            <img width="200px" height="200px" src="https://trustseal.enamad.ir/logo.aspx?id=115472&amp;p=voXY1t6m1R14FWzA" alt="" onclick="window.open("https://trustseal.enamad.ir/Verify.aspx?id=115472&amp;p=voXY1t6m1R14FWzA&quot;, &quot;Popup&quot;,&quot;toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30)" style="cursor:pointer" id="voXY1t6m1R14FWzA">
+                            
 <hr>
               <small>© Telemusic 2018, All rights reserved.</small>
             </div>
@@ -365,9 +365,22 @@
 		<script type="text/javascript" src="assets/js/jssor.utils.js"></script>
 		<script type="text/javascript" src="assets/js/jssor.slider.js"></script>
 		<script type="text/javascript" src="assets/js/sponsor_init.js"></script>
+		
+		<!-- SMOOTH SCROLL  -->
 		<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+		
+		<!-- NICE SCROLL  -->
+		<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
+		
+		<!-- SUBSCRIPTION FORM  -->
+		<script type="text/javascript" src="assets/js/notifyMe.js"></script>
+		
 		<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+		
+		<!-- ANIMATION  -->
 		<script type="text/javascript" src="assets/js/wow.min.js"></script>
+		
+		<!-- INITIALIZATION  -->
 		<script type="text/javascript" src="assets/js/init.js"></script>
 		
  <script type="text/javascript">!function(){function t(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,localStorage.getItem("rayToken")?t.src="https://app.raychat.io/scripts/js/"+o+"?rid="+localStorage.getItem("rayToken")+"&href="+window.location.href:t.src="https://app.raychat.io/scripts/js/"+o;var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var e=document,a=window,o="71765e03-fcbe-4db6-bc9a-017261dede4c";"complete"==e.readyState?t():a.attachEvent?a.attachEvent("onload",t):a.addEventListener("load",t,!1)}();</script> 
